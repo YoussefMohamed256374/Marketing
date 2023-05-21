@@ -1,0 +1,20 @@
+@use '../variables/colors' as *;
+@use '../mixin/mixin' as *;
+/* landing start */
+.landing{
+  height: 100%;
+  .container{
+    padding-top: 5rem;
+    h2{
+      font-size: 4rem;
+      color: $Radical-Red;
+    }
+    h1{
+      font-size: 6rem;
+      color: $white;
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+/* landing end */
