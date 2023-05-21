@@ -36,8 +36,8 @@ var swiper = new Swiper(".home-slider", {
   grabCursor: true,
 });
 
-$(document).ready(() => {
-  $('.count').each(() => {
+$(document).ready(function () {
+  $('.count').each(function () {
     var $this = $(this),
       countTo = $this.attr('data-count');
     $({ countNum: $this.text() }).animate({
@@ -45,16 +45,16 @@ $(document).ready(() => {
     },
       {
         duration: 5000,
-        step: () => {
+        step: function () {
           $this.text(Math.floor(this.countNum));
         },
-        complete: () => {
+        complete: function () {
           $this.text(this.countNum + '+');
         }
       });
   });
 
-  $('.gallery .btn').click(() => {
+  $('.gallery .btn').click(function ()  {
 
     $(this).addClass('active').siblings().removeClass('active');
 
